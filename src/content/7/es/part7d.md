@@ -547,9 +547,13 @@ const config = {
   },
   // highlight-start
   devServer: {
-    contentBase: path.resolve(__dirname, 'build'),
+    static: './build',
     compress: true,
-    port: 3000,
+    port: 3000
+    // Obsolete parameter?
+    /*
+    contentBase: path.resolve(__dirname, 'build'),
+    */
   },
   // highlight-end
   // ...
